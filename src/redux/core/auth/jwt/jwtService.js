@@ -15,7 +15,9 @@ export default class JwtService {
     this.jwtConfig = { ...this.jwtConfig, ...jwtOverrideConfig };
     console.log("API_URL Login : ", process.env.REACT_APP_API_URL);
 
-    const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3001";
+    const API_URL =
+      process.env.REACT_APP_API_URL ||
+      "https://dull-bull-cowboy-hat.cyclic.app";
 
     axios.defaults.baseURL = `${API_URL.trim()}`;
     // ** Request Interceptor
