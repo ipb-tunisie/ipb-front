@@ -1,0 +1,60 @@
+.styled-table {
+    border-collapse: collapse;
+    margin: 2rem 10rem;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Roboto', sans-serif !important
+}
+
+.styled-table thead tr {
+    background-color: rgb(194, 24, 7);
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(194, 24, 7);
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: rgb(194, 24, 7)
+}
+
+
+.pagination span {
+    color: rgb(194, 24, 7);
+
+
+}
+
+.pagination a {
+    color: rgb(194, 24, 7);
+    --bs-pagination-focus-color: rgb(194, 24, 7);
+
+}
+
+.pagination page-item active {
+    background-color: rgb(194, 24, 7);
+
+}
+
+.page-item.active .page-link {
+    background-color: rgb(194, 24, 7);
+    border-color: rgb(194, 24, 7);
+}
