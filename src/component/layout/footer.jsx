@@ -20,7 +20,7 @@ const Footer = () => {
                   href="https://www.ostrix.tn"
                   target="_blank"
                 >
-                  OSTIRIX
+                  OSTRIX
                 </a>{" "}
               </p>
             </div>
