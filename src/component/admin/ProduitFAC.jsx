@@ -15,7 +15,7 @@ function ProductFac({ option }) {
   const [productToDelete, setProductToDelete] = useState(null);
   useEffect(() => {
     axios
-      .get("http://102.211.210.62:3001/product")
+      .get("https://102.211.210.62:3001/product")
       .then((response) => {
         console.log(response.data);
         const productsWithMatchingService = response.data.filter(
@@ -32,7 +32,7 @@ function ProductFac({ option }) {
   const handleDeleteConfirmation = () => {
     // Perform the delete operation here
     axios
-      .post("http://102.211.210.62:3001/product/delete", {
+      .post("https://102.211.210.62:3001/product/delete", {
         courseId: productsid,
         productDetailId: productToDelete._id,
       })

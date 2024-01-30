@@ -1,6 +1,6 @@
 import axios from "axios";
 const API_URL =
-  process.env.REACT_APP_API_URL || "http://102.211.210.62:3001";
+  process.env.REACT_APP_API_URL || "https://102.211.210.62:3001";
 console.log("API_URL : ", API_URL);
 
 axios.defaults.baseURL = `${API_URL.trim()}`;

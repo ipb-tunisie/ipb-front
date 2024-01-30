@@ -28,7 +28,7 @@ const Cart = () => {
       })),
     };
     axios
-      .post("http://102.211.210.62:3001/commande/add", orderData)
+      .post("https://102.211.210.62:3001/commande/add", orderData)
       .then((response) => {
         console.log("Order data sent successfully:", response.data);
       })

@@ -33,7 +33,7 @@ function AddProduct({ option, onAdd = () => {} }) {
   const [specialtiesConcours, setSpecialtiesConcours] = useState();
   useEffect(() => {
     axios
-      .get("http://102.211.210.62:3001/specialties")
+      .get("https://102.211.210.62:3001/specialties")
       .then((response) => {
         setSpecialties(response.data[0]);
         if (option === "Ouvrages Medicaux") {
@@ -50,7 +50,7 @@ function AddProduct({ option, onAdd = () => {} }) {
   }, [option]);
   useEffect(() => {
     axios
-      .get("http://102.211.210.62:3001/specialiteConcours")
+      .get("https://102.211.210.62:3001/specialiteConcours")
       .then((response) => {
         console.log(response.data[0].Spécialités[0]);
         setSpecialtiesConcours(response.data[0].Spécialités);
@@ -144,7 +144,7 @@ function AddProduct({ option, onAdd = () => {} }) {
     try {
       const response = await axios
         .post(
-          "http://102.211.210.62:3001/productcours/add",
+          "https://102.211.210.62:3001/productcours/add",
           formattedData
         )
         .then((res) => {

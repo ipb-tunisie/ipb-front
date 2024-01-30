@@ -39,7 +39,7 @@ function PrixMain() {
     console.log(modifiedValues);
     axios
       .post(
-        "http://102.211.210.62:3001/impression/edit",
+        "https://102.211.210.62:3001/impression/edit",
         modifiedValues
       )
       .then((response) => {
