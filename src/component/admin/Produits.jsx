@@ -13,7 +13,7 @@ function ProductForm({ option, handleShow }) {
   const [productToDelete, setProductToDelete] = useState(null);
   useEffect(() => {
     axios
-      .get("https://102.211.210.62:3001/productcours")
+      .get("http://102.211.210.62/productcours")
       .then((response) => {
         const productsWithMatchingService = response.data.find(
           (product) => product.service === option
@@ -27,7 +27,7 @@ function ProductForm({ option, handleShow }) {
   const handleDeleteConfirmation = () => {
     // Perform the delete operation here
     axios
-      .post("https://102.211.210.62:3001/productcours/delete", {
+      .post("http://102.211.210.62/productcours/delete", {
         courseId: productsid,
         productDetailId: productToDelete._id,
       })

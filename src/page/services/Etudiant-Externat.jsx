@@ -21,7 +21,7 @@ const Externat = () => {
   const [ipbPromo, setIpbPromo] = useState([]);
   useEffect(() => {
     axios
-      .get("https://102.211.210.62:3001/productcours")
+      .get("http://102.211.210.62/productcours")
       .then((response) => {
         const productsWithMatchingService = response.data.find(
           (product) => product.service === "Concours ECN Tunisie"
@@ -34,7 +34,7 @@ const Externat = () => {
   }, []);
   useEffect(() => {
     axios
-      .get("https://102.211.210.62:3001/productcours")
+      .get("http://102.211.210.62/productcours")
       .then((response) => {
         const productsWithMatchingService = response.data.find(
           (product) => product.service === "Concours ECN Tunisie"

@@ -20,7 +20,7 @@ function Commande() {
   const [acceptedStatus, setAcceptedStatus] = useState(false);
   useEffect(() => {
     axios
-      .get("https://102.211.210.62:3001/commande")
+      .get("http://102.211.210.62/commande")
       .then((response) => {
         console.log(response.data);
         setFormData(response.data);
@@ -40,7 +40,7 @@ function Commande() {
   };
   const updateStatus = (CommandeId, status) => {
     axios
-      .post("https://102.211.210.62:3001/commande/edit", {
+      .post("http://102.211.210.62/commande/edit", {
         CommandeId,
         status,
       })

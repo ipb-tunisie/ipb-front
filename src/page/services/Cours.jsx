@@ -21,7 +21,7 @@ const Cours = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("https://102.211.210.62:3001/productcours")
+      .get("http://102.211.210.62/productcours")
       .then((response) => {
         const productsWithMatchingService = response.data.find(
           (product) => product.service === "Ouvrages Medicaux"

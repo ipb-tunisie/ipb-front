@@ -17,7 +17,7 @@ export default class JwtService {
 
     const API_URL =
       process.env.REACT_APP_API_URL ||
-      "https://102.211.210.62:3001";
+      "http://102.211.210.62";
 
     axios.defaults.baseURL = `${API_URL.trim()}`;
     // ** Request Interceptor

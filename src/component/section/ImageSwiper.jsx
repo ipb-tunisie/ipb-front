@@ -28,7 +28,7 @@ const ImageSwiper = () => {
   };
   useEffect(() => {
     axios
-      .get("https://102.211.210.62:3001/image")
+      .get("http://102.211.210.62/image")
       .then((response) => {
         console.log(response.data);
         setImage(response.data);

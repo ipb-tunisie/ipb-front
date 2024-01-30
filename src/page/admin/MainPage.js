@@ -15,7 +15,7 @@ function Main() {
   const [promo, setPromo] = useState([]);
   useEffect(() => {
     axios
-      .get("https://102.211.210.62:3001/image")
+      .get("http://102.211.210.62/image")
       .then((response) => {
         console.log(response.data);
         setPromo(response.data);
@@ -28,7 +28,7 @@ function Main() {
 
     try {
       const response = await axios.post(
-        "https://102.211.210.62:3001/image/add",
+        "http://102.211.210.62/image/add",
         {
           img: image,
         }
@@ -46,7 +46,7 @@ function Main() {
   };
   const handleDeleteConfirmation = () => {
     axios
-      .post("https://102.211.210.62:3001/image/delete", {
+      .post("http://102.211.210.62/image/delete", {
         imageId: productToDelete,
       })
       .then((response) => {
