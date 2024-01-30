@@ -15,7 +15,7 @@ function ProductFac({ option }) {
   const [productToDelete, setProductToDelete] = useState(null);
   useEffect(() => {
     axios
-      .get("https://dull-bull-cowboy-hat.cyclic.app/product")
+      .get("http://102.211.210.62:3001/product")
       .then((response) => {
         console.log(response.data);
         const productsWithMatchingService = response.data.filter(
@@ -32,7 +32,7 @@ function ProductFac({ option }) {
   const handleDeleteConfirmation = () => {
     // Perform the delete operation here
     axios
-      .post("https://dull-bull-cowboy-hat.cyclic.app/product/delete", {
+      .post("http://102.211.210.62:3001/product/delete", {
         courseId: productsid,
         productDetailId: productToDelete._id,
       })

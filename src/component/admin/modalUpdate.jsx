@@ -24,7 +24,7 @@ function ModalUpdate({ courseId, productDetailId, onUpdate, detail, option }) {
 
   const handleSaveChanges = () => {
     axios
-      .post("https://dull-bull-cowboy-hat.cyclic.app/productcours/edit", {
+      .post("http://102.211.210.62:3001/productcours/edit", {
         courseId,
         productDetailId,
         imgUrl: products.imgUrl,

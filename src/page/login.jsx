@@ -21,7 +21,7 @@ const LoginPage = () => {
   const handleLoginAction = async () => {
     try {
       const response = await axios.post(
-        "https://dull-bull-cowboy-hat.cyclic.app/auth/login",
+        "http://102.211.210.62:3001/auth/login",
         {
           email: email,
           password: password,

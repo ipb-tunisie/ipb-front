@@ -39,7 +39,7 @@ function PrixMain() {
     console.log(modifiedValues);
     axios
       .post(
-        "https://dull-bull-cowboy-hat.cyclic.app/impression/edit",
+        "http://102.211.210.62:3001/impression/edit",
         modifiedValues
       )
       .then((response) => {

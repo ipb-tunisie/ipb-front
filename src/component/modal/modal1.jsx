@@ -67,7 +67,7 @@ const Modal1 = (props) => {
     } else {
       // Fetch prices from the server for other cases
       axios
-        .get("https://dull-bull-cowboy-hat.cyclic.app/impression")
+        .get("http://102.211.210.62:3001/impression")
         .then((response) => {
           setPrix(response.data);
         })

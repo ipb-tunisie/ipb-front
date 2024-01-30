@@ -10,7 +10,7 @@ const CommandeList = () => {
   const { userData } = useSelector((state) => state.auth);
   useEffect(() => {
     axios
-      .get("https://dull-bull-cowboy-hat.cyclic.app/commande")
+      .get("http://102.211.210.62:3001/commande")
       .then((response) => {
         const commandeWithMatchingemail = response.data.filter(
           (product) => product.email === userData.email

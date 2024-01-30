@@ -28,7 +28,7 @@ const ImageSwiper = () => {
   };
   useEffect(() => {
     axios
-      .get("https://dull-bull-cowboy-hat.cyclic.app/image")
+      .get("http://102.211.210.62:3001/image")
       .then((response) => {
         console.log(response.data);
         setImage(response.data);

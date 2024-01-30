@@ -15,7 +15,7 @@ function Main() {
   const [promo, setPromo] = useState([]);
   useEffect(() => {
     axios
-      .get("https://dull-bull-cowboy-hat.cyclic.app/image")
+      .get("http://102.211.210.62:3001/image")
       .then((response) => {
         console.log(response.data);
         setPromo(response.data);
@@ -28,7 +28,7 @@ function Main() {
 
     try {
       const response = await axios.post(
-        "https://dull-bull-cowboy-hat.cyclic.app/image/add",
+        "http://102.211.210.62:3001/image/add",
         {
           img: image,
         }
@@ -46,7 +46,7 @@ function Main() {
   };
   const handleDeleteConfirmation = () => {
     axios
-      .post("https://dull-bull-cowboy-hat.cyclic.app/image/delete", {
+      .post("http://102.211.210.62:3001/image/delete", {
         imageId: productToDelete,
       })
       .then((response) => {

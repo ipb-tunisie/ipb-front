@@ -69,7 +69,7 @@ function AddProductFac({ option, onAdd = () => {} }) {
     try {
       const response = await axios
         .post(
-          "https://dull-bull-cowboy-hat.cyclic.app/product/add",
+          "http://102.211.210.62:3001/product/add",
           formattedData
         )
         .then((res) => {
