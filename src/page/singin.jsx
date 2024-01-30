@@ -31,7 +31,7 @@ const SignupPage = () => {
 
     try {
       const response = await axios.post(
-        "https://dull-bull-cowboy-hat.cyclic.app/auth/register",
+        "http://102.211.210.62:3001/auth/register",
         {
           fullName,
           email,
