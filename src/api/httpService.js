@@ -1,6 +1,6 @@
 import axios from "axios";
 const API_URL =
-  process.env.REACT_APP_API_URL || "http://102.211.210.62";
+  process.env.REACT_APP_API_URL || "https://www.api.ipb-tunisie.tn";
 console.log("API_URL : ", API_URL);
 
 axios.defaults.baseURL = `${API_URL.trim()}`;

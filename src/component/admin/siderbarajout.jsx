@@ -33,7 +33,7 @@ function AddProduct({ option, onAdd = () => {} }) {
   const [specialtiesConcours, setSpecialtiesConcours] = useState();
   useEffect(() => {
     axios
-      .get("http://102.211.210.62/specialties")
+      .get("https://www.api.ipb-tunisie.tn/specialties")
       .then((response) => {
         setSpecialties(response.data[0]);
         if (option === "Ouvrages Medicaux") {
@@ -50,7 +50,7 @@ function AddProduct({ option, onAdd = () => {} }) {
   }, [option]);
   useEffect(() => {
     axios
-      .get("http://102.211.210.62/specialiteConcours")
+      .get("https://www.api.ipb-tunisie.tn/specialiteConcours")
       .then((response) => {
         console.log(response.data[0].Spécialités[0]);
         setSpecialtiesConcours(response.data[0].Spécialités);
@@ -144,7 +144,7 @@ function AddProduct({ option, onAdd = () => {} }) {
     try {
       const response = await axios
         .post(
-          "http://102.211.210.62/productcours/add",
+          "https://www.api.ipb-tunisie.tn/productcours/add",
           formattedData
         )
         .then((res) => {

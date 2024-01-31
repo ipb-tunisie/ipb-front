@@ -15,7 +15,7 @@ function Main() {
   const [promo, setPromo] = useState([]);
   useEffect(() => {
     axios
-      .get("http://102.211.210.62/image")
+      .get("https://www.api.ipb-tunisie.tn/image")
       .then((response) => {
         console.log(response.data);
         setPromo(response.data);
@@ -28,7 +28,7 @@ function Main() {
 
     try {
       const response = await axios.post(
-        "http://102.211.210.62/image/add",
+        "https://www.api.ipb-tunisie.tn/image/add",
         {
           img: image,
         }
@@ -46,7 +46,7 @@ function Main() {
   };
   const handleDeleteConfirmation = () => {
     axios
-      .post("http://102.211.210.62/image/delete", {
+      .post("https://www.api.ipb-tunisie.tn/image/delete", {
         imageId: productToDelete,
       })
       .then((response) => {

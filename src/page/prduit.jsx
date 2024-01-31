@@ -18,7 +18,7 @@ const Produit = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("http://102.211.210.62/product")
+      .get("https://www.api.ipb-tunisie.tn/product")
       .then((response) => {
         const productsWithMatchingService = response.data.find(
           (product) => product.Faculte === university

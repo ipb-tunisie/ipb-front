@@ -24,7 +24,7 @@ function ModalUpdate({ courseId, productDetailId, onUpdate, detail, option }) {
 
   const handleSaveChanges = () => {
     axios
-      .post("http://102.211.210.62/productcours/edit", {
+      .post("https://www.api.ipb-tunisie.tn/productcours/edit", {
         courseId,
         productDetailId,
         imgUrl: products.imgUrl,

@@ -28,7 +28,7 @@ const Cart = () => {
       })),
     };
     axios
-      .post("http://102.211.210.62/commande/add", orderData)
+      .post("https://www.api.ipb-tunisie.tn/commande/add", orderData)
       .then((response) => {
         console.log("Order data sent successfully:", response.data);
       })
