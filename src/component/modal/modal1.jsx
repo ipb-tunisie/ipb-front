@@ -67,7 +67,7 @@ const Modal1 = (props) => {
     } else {
       // Fetch prices from the server for other cases
       axios
-        .get("https://www.api.ipb-tunisie.tn/impression")
+        .get("https://api.ipb-tunisie.tn/impression")
         .then((response) => {
           setPrix(response.data);
         })

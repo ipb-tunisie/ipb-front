@@ -20,7 +20,7 @@ function Commande() {
   const [acceptedStatus, setAcceptedStatus] = useState(false);
   useEffect(() => {
     axios
-      .get("https://www.api.ipb-tunisie.tn/commande")
+      .get("https://api.ipb-tunisie.tn/commande")
       .then((response) => {
         console.log(response.data);
         setFormData(response.data);
@@ -40,7 +40,7 @@ function Commande() {
   };
   const updateStatus = (CommandeId, status) => {
     axios
-      .post("https://www.api.ipb-tunisie.tn/commande/edit", {
+      .post("https://api.ipb-tunisie.tn/commande/edit", {
         CommandeId,
         status,
       })

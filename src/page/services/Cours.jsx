@@ -21,7 +21,7 @@ const Cours = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("https://www.api.ipb-tunisie.tn/productcours")
+      .get("https://api.ipb-tunisie.tn/productcours")
       .then((response) => {
         const productsWithMatchingService = response.data.find(
           (product) => product.service === "Ouvrages Medicaux"

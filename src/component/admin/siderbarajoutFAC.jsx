@@ -69,7 +69,7 @@ function AddProductFac({ option, onAdd = () => {} }) {
     try {
       const response = await axios
         .post(
-          "https://www.api.ipb-tunisie.tn/product/add",
+          "https://api.ipb-tunisie.tn/product/add",
           formattedData
         )
         .then((res) => {

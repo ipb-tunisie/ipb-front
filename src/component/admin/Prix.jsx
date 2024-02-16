@@ -39,7 +39,7 @@ function PrixMain() {
     console.log(modifiedValues);
     axios
       .post(
-        "https://www.api.ipb-tunisie.tn/impression/edit",
+        "https://api.ipb-tunisie.tn/impression/edit",
         modifiedValues
       )
       .then((response) => {

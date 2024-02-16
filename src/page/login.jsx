@@ -21,7 +21,7 @@ const LoginPage = () => {
   const handleLoginAction = async () => {
     try {
       const response = await axios.post(
-        "https://www.api.ipb-tunisie.tn/auth/login",
+        "https://api.ipb-tunisie.tn/auth/login",
         {
           email: email,
           password: password,

@@ -15,7 +15,7 @@ function ProductFac({ option }) {
   const [productToDelete, setProductToDelete] = useState(null);
   useEffect(() => {
     axios
-      .get("https://www.api.ipb-tunisie.tn/product")
+      .get("https://api.ipb-tunisie.tn/product")
       .then((response) => {
         console.log(response.data);
         const productsWithMatchingService = response.data.filter(
@@ -32,7 +32,7 @@ function ProductFac({ option }) {
   const handleDeleteConfirmation = () => {
     // Perform the delete operation here
     axios
-      .post("https://www.api.ipb-tunisie.tn/product/delete", {
+      .post("https://api.ipb-tunisie.tn/product/delete", {
         courseId: productsid,
         productDetailId: productToDelete._id,
       })

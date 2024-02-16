@@ -21,7 +21,7 @@ const Externat = () => {
   const [ipbPromo, setIpbPromo] = useState([]);
   useEffect(() => {
     axios
-      .get("https://www.api.ipb-tunisie.tn/productcours")
+      .get("https://api.ipb-tunisie.tn/productcours")
       .then((response) => {
         const productsWithMatchingService = response.data.find(
           (product) => product.service === "Concours ECN Tunisie"
@@ -34,7 +34,7 @@ const Externat = () => {
   }, []);
   useEffect(() => {
     axios
-      .get("https://www.api.ipb-tunisie.tn/productcours")
+      .get("https://api.ipb-tunisie.tn/productcours")
       .then((response) => {
         const productsWithMatchingService = response.data.find(
           (product) => product.service === "Concours ECN Tunisie"

@@ -10,7 +10,7 @@ const CommandeList = () => {
   const { userData } = useSelector((state) => state.auth);
   useEffect(() => {
     axios
-      .get("https://www.api.ipb-tunisie.tn/commande")
+      .get("https://api.ipb-tunisie.tn/commande")
       .then((response) => {
         const commandeWithMatchingemail = response.data.filter(
           (product) => product.email === userData.email

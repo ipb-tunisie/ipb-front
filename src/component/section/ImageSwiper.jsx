@@ -28,7 +28,7 @@ const ImageSwiper = () => {
   };
   useEffect(() => {
     axios
-      .get("https://www.api.ipb-tunisie.tn/image")
+      .get("https://api.ipb-tunisie.tn/image")
       .then((response) => {
         console.log(response.data);
         setImage(response.data);

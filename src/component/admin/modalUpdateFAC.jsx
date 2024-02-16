@@ -11,7 +11,7 @@ function ModalUpdateFAC({ courseId, productDetailId, onUpdate }) {
   const [products, setProducts] = useState([]);
   const handleSaveChanges = () => {
     axios
-      .post("https://www.api.ipb-tunisie.tn/product/edit", {
+      .post("https://api.ipb-tunisie.tn/product/edit", {
         courseId,
         productDetailId,
         anne: products.anne,

@@ -31,7 +31,7 @@ const SignupPage = () => {
 
     try {
       const response = await axios.post(
-        "https://www.api.ipb-tunisie.tn/auth/register",
+        "https://api.ipb-tunisie.tn/auth/register",
         {
           fullName,
           email,
